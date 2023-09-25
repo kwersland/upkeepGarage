@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upkeep Garage Storage KC</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/page2.png')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+
+    <fixed>
+
+        <!-- Header -->
+        <header id="header" class="d-flex justify-content-between align-items-center ">
+            <left id="left">
+                <a href="/">
+                    <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Upkeep Garage Storage KC">
+                </a>
+            </left>
+            <menu id="dropdown">
+                <div class="dropdown-content">
+                    <a href="/">
+                        {% if page == "home" %}
+                        <h3 class="active">Home</h3>
+                        {% else %}
+                        <h3>Home</h3>
+                        {% endif%}
+                    </a>
+                    <a href="/gallery">
+                        {% if page == "gallery" %}
+                        <h3 class="active">Gallery</h3>
+                        {% else %}
+                        <h3>Gallery</h3>
+                        {% endif%}
+                    </a>
+                    <a href="/request">
+                        {% if page == "request" %}
+                        <h3 class="active">Request</h3>
+                        {% else %}
+                        <h3>Request</h3>
+                        {% endif%}
+                    </a>
+                    <div class="d-flex">
+                            <!-- Social Media Links -->
+                        <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=61551834987966&mibextid=LQQJ4d">
+                            <img class="social" src="{{ url_for('static', filename='img/social_media/facebook.webp') }}" >
+                        </a>
+                        <a class="text-decoration-none" href="https://www.instagram.com/upkeepgaragestoragekc/">
+                            <img class="social" src="{{ url_for('static', filename='img/social_media/instagram.png') }}" >
+                        </a>
+                        <a class="text-decoration-none" href="https://www.linkedin.com/company/upkeep-garage-storage-kc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B2jotMiRpReql47WLlBH%2FuQ%3D%3D">
+                            <img class="social" src="{{ url_for('static', filename='img/social_media/linkedin.png') }}" >
+                        </a>
+                        <a class="text-decoration-none" href="https://www.tiktok.com/@upkeepgaragestoragekc?_t=8fqeiouZqsY&_r=1">
+                            <img class="social" src="{{ url_for('static', filename='img/social_media/tiktok.png') }}" >
+                        </a>
+                    </div>
+                </div>
+                <img src="{{ url_for('static', filename='img/menu.png') }}" >
+            </menu>
+            <right id="navigation" class="d-flex justify-content-end align-items-center">
+
+                <!-- <h3>Shop</h3> -->
+                <a href="/" class="links">
+                    {% if page == "home" %}
+                    <h3 class="active">Home</h3>
+                    {% else %}
+                    <h3>Home</h3>
+                    {% endif%}
+                </a>
+                <a href="/gallery" class="links">
+                    {% if page == "gallery" %}
+                    <h3 class="active">Gallery</h3>
+                    {% else %}
+                    <h3>Gallery</h3>
+                    {% endif%}
+                </a>
+                <a href="/request" class="links">
+                    {% if page == "request" %}
+                    <h3 class="active">Request</h3>
+                    {% else %}
+                    <h3>Request</h3>
+                    {% endif%}
+                </a>
+                <!-- <a href="/calculator" class="links">
+                    {% if page == "calculator" %}
+                    <h3 class="active">Calculator</h3>
+                    {% else %}
+                    <h3>Calculator</h3>
+                    {% endif%}
+                </a> -->
+                <!-- <h3>Login</h3> -->
+                <div id="social_media" class="me-3">
+                    <!-- Social Media Links -->
+                    <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=61551834987966&mibextid=LQQJ4d">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/facebook.webp') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/upkeepgaragestoragekc/">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/instagram.png') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.linkedin.com/company/upkeep-garage-storage-kc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B2jotMiRpReql47WLlBH%2FuQ%3D%3D">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/linkedin.png') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.tiktok.com/@upkeepgaragestoragekc?_t=8fqeiouZqsY&_r=1">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/tiktok.png') }}" >
+                    </a>
+                </div>
+            </right>
+        </header>
+        
+        <!-- background -->
+        <div id="main" class="video-header">
+            <video id="bg-video" src="{{ url_for('static', filename='img/Upkeep.mov') }}" muted autoplay playsinline loop></video>
+            <div class="d-flex flex-column viewport-header">
+                <h1 id="hook" class="fw-bold fs-1">GARAGE IMPROVEMENT THAT <br> IMPROVES YOUR LIFE</h1>
+                <h1 id="hook">(913) 535-3759</h1>
+                <a id="button" href="/request" class=" btn btn-light text-reset">Request a Quote</a>
+            </div>
+        </div>
+    </fixed>
+        
+        
+    <!-- main portion -->
+    <main class="d-flex flex-column">
+        <scroll>
+            <images>
+                <a  href="/gallery" class="text-decoration-none text-dark">
+                    <row1 class="d-flex justify-content-center">
+                        <img class="img" src="{{ url_for('static', filename='img/main_page_pics/1.jpeg') }}"/>
+                        <img class="img" src="{{ url_for('static', filename='img/main_page_pics/2.jpeg') }}"/>
+                        <img class="img" src="{{ url_for('static', filename='img/main_page_pics/3.jpeg') }}"/>
+                    </row1>
+                    <row2 class="d-flex justify-content-center">
+                        <img class="img" src="{{ url_for('static', filename='img/main_page_pics/4.jpeg') }}"/>
+                        <img class="img" src="{{ url_for('static', filename='img/main_page_pics/5.jpeg') }}"/>
+                        <img class="img" src="{{ url_for('static', filename='img/main_page_pics/6.jpeg') }}"/>
+                    </row2>
+                </a>
+            </images>
+            <made class="mt-2">
+                <h1 id="usa">Proudly Made in North America</h1>
+                <h3 id="usa">Our Racks Have the Highest Weight Capacity on the Market</h3>
+                <h3 id="usa">Locally Owned and Operated</h3>
+            </made>
+            <images class="d-flex justify-content-center">
+                <img class="img" src="{{ url_for('static', filename='img/main_page_pics/1.jpeg') }}"/>
+                <img class="img" src="{{ url_for('static', filename='img/main_page_pics/2.jpeg') }}"/>
+                <img class="img" src="{{ url_for('static', filename='img/main_page_pics/3.jpeg') }}"/>
+            </images>
+            <request class="d-flex flex-column align-items-center bg-opaque">
+                <h1 class="text-light">Want to learn more?</h1>
+                <a id="button" href="/request" class=" btn btn-dark text-reset">Request a Quote</a>
+            </request>
+            <meeting>
+                <h1 class="mt-2">Do you know what you want?</h1>
+                <!-- Start of Meetings Embed Script -->
+                <div id="meeting2" class="meetings-iframe-container" data-src="https://meetings.hubspot.com/karsten-wersland?embed=true"></div>
+                <script type="text/javascript" src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"></script>
+                <!-- End of Meetings Embed Script -->
+            </meeting>
+            <owners id="owners">
+                <img class="owners" src="{{ url_for('static', filename='img/threeamigos.JPG') }}">
+            </owners>
+            <mission id="mission">
+                <div class="text-center">
+                    
+                    <h1 class="text-center p-4">
+                        We believe that a well-organized garage is the cornerstone of an elevated <br>
+                        life and a harmonious environment. With unwavering dedication, we transform<br>
+                        cluttered garages into functional and inspiring spaces that empower individuals<br>
+                        and families to thrive. Our commitment to exceptional craftsmanship and <br>
+                        customer-centric service promotes this outcome.
+                        <br>
+                        <br>
+                        <em class="fw-light fst-italic">This is garage improvement that improves lives.</em>
+                    </h1>
+                </div>
+            </mission>
+            <mission id="mission-small">
+                <div class="text-center">
+                    
+                    <h4 class="text-center p-4">
+                        We believe that a well-organized garage is the cornerstone of 
+                        an elevated life and a harmonious environment. With unwavering 
+                        dedication, we transform cluttered garages into functional and 
+                        inspiring spaces that empower individuals and families to thrive. 
+                        Our commitment to exceptional craftsmanship and customer-centric 
+                        service promotes this outcome. 
+                        <br>
+                        <br>
+                        <em class="fw-light fst-italic">This is garage improvement that improves lives.</em>
+                    </h4>
+                </div>
+            </mission>
+            <about class="display2 flex-column align-items-center">
+                    <div class="d-flex justify-content-evenly align-items-center">
+                        <img id="image" src="{{ url_for('static', filename='img/calvin.JPG') }}"/>
+                        <div id="bio">
+                            <h1 class="fw-bold">The Fletcher's</h1>
+                            <br>
+                            <br>
+                            <h3>
+                                As one of the proud owners, Calvin is married to a wonderful spouse, and
+                                together, they are nurturing their beautiful family, blessed with two
+                                lovely daughters. His unwavering belief in the importance of family 
+                                is at the core of his business philosophy. His years of remodel 
+                                experience and customer experience enables him to create a happy 
+                                space where families can thrive and enjoy a fulfilling life.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-evenly align-items-center">
+                        <div id="bio" class="text-end">
+                            <h1 class="fw-bold">The Cook's</h1>
+                            <br>
+                            <br>
+                            <h3>
+                                Levi and his wife Skylar have a beautiful daughter, Hazel,
+                                and the two of them are the greatest joy in his life. Levi 
+                                has resided in Kansas his whole life. He grew up in the country
+                                and loves working with his hands. Levi has been remodeling
+                                for most of his life in many settings. Him and his family 
+                                are committed to raising their family and serving others 
+                                with what they do.
+                            </h3>
+                        </div>
+                        <img id="image" src="{{ url_for('static', filename='img/levi.JPG') }}"/>
+                    </div>
+                    <div class="d-flex justify-content-evenly align-items-center">
+                        <img id="image" class="about" src="{{ url_for('static', filename='img/karsten.JPG') }}"/>
+                        <div id="bio">
+                            <h1 class="fw-bold">The Wersland's</h1>
+                            <br>
+                            <br>
+                            <h3>
+                                Karsten and his wife, Samantha, have a beautiful baby girl named Evelyn.
+                                Karsten grew up in Utah and he and his little family moved to kansas to 
+                                start a new adventure. Karsten grew up doing house work, and always had a
+                                knack for handywork. He has spent most of this year remodeling their own
+                                house and working for a remodel/renovation company. His years of customer
+                                relations experience have him excited to bring organization and peace to
+                                individuals and families in Kansas City.
+                            </h3>
+                        </div>
+                    </div>
+            </about>
+            <about2 class="display flex-column align-items-center">
+                <h5 id="instruction" class="fw-light">*click on the images to learn more about the owners</h5>
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <a id="image1" class="display-cont" onclick="display('image1','bio1')">
+                        <img class="image" src="{{ url_for('static', filename='img/calvin.JPG') }}"/>
+                    </a>
+                    <div onmouseout="hide('image1','bio1')" id="bio1" class="bio">
+                        <h1 class="fw-bold">The Fletcher's</h1>
+                        <br>
+                        <br>
+                        <h3>
+                            As one of the proud owners, Calvin is married to a wonderful spouse, and
+                            together, they are nurturing their beautiful family, blessed with two
+                            lovely daughters. His unwavering belief in the importance of family 
+                            is at the core of his business philosophy. His years of remodel 
+                            experience and customer experience enables him to create a happy 
+                            space where families can thrive and enjoy a fulfilling life.
+                        </h3>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <div onmouseout="hide('image2','bio2')" id="bio2" class="text-end bio">
+                        <h1 class="fw-bold">The Cook's</h1>
+                        <br>
+                        <br>
+                        <h3>
+                            Levi and his wife Skylar have a beautiful daughter, Hazel,
+                            and the two of them are the greatest joy in his life. Levi 
+                            has resided in Kansas his whole life. He grew up in the country
+                            and loves working with his hands. Levi has been remodeling
+                            for most of his life in many settings. Him and his family 
+                            are committed to raising their family and serving others 
+                            with what they do.
+                        </h3>
+                    </div>
+                    <a id="image2" class="text-decoration-none display-cont" onclick="display('image2','bio2')">
+                        <img class="image" src="{{ url_for('static', filename='img/levi.JPG') }}"/>
+                    </a>
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center">
+                    <a id="image3" class="text-decoration-none display-cont" onclick="display('image3','bio3')">
+                        <img class="image" src="{{ url_for('static', filename='img/karsten.JPG') }}"/>
+                    </a>                        
+                    <div onmouseout="hide('image3','bio3')" id="bio3" class="bio">
+                        <h1 class="fw-bold">The Wersland's</h1>
+                        <br>
+                        <br>
+                        <h3>
+                            Karsten and his wife, Samantha, have a beautiful baby girl named Evelyn.
+                            Karsten grew up in Utah and he and his little family moved to kansas to 
+                            start a new adventure. Karsten grew up doing house work, and always had a
+                            knack for handywork. He has spent most of this year remodeling their own
+                            house and working for a remodel/renovation company. His years of customer
+                            relations experience have him excited to bring organization and peace to
+                            individuals and families in Kansas City.
+                        </h3>
+                    </div>
+                </div>
+            </about2>
+            <footer class="footer d-flex">
+                <div>
+                    <h5 style="color:black;">Website created by Karsten Wersland</h5>
+                    <h5 style="color:black;">Upkeep Garage Storage KC, LLC</h5>
+                    <a style="text-decoration:none; color:black;" href="mailto:admin@upkeepgaragekc.com" ><h5>admin@upkeepgaragekc.com</h5></a>
+                </div>
+                <div class="p-5">
+                    <!-- Social Media Links -->
+                    <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=61551834987966&mibextid=LQQJ4d">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/facebook.webp') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/upkeepgaragestoragekc/">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/instagram.png') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.linkedin.com/company/upkeep-garage-storage-kc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B2jotMiRpReql47WLlBH%2FuQ%3D%3D">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/linkedin.png') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.tiktok.com/@upkeepgaragestoragekc?_t=8fqeiouZqsY&_r=1">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/tiktok.png') }}" >
+                    </a>
+                </div>
+            </footer>
+        </scroll>
+    </main>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/43829551.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+</body>
+</html>

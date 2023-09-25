@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upkeep Garage Storage Calculator</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/upkeep_logo.png')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+    
+    <header id="header" class="d-flex justify-content-between ">
+        <left>
+            <a href="/">
+                <img id="logo" src="{{ url_for('static', filename='img/upkeep_logo.png') }}" alt="Upkeep Garage Storage KC">
+            </a>
+        </left>
+        <right id="navigation" class="d-flex justify-content-end align-items-center">
+            <!-- Location Dropdown -->
+            <!-- <div class="dropdown">
+                <button class="btn btn-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Location
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Kansas City</a>
+                    <a class="dropdown-item" href="#">Salt Lake City</a>
+                </div>
+            </div> -->
+            <!-- <h3>Home</h3> -->
+            <!-- <h3>Shop</h3> -->
+            <a href="/" class="links">
+                {% if page == "home" %}
+                <h3 class="active">Home</h3>
+                {% else %}
+                <h3>Home</h3>
+                {% endif%}
+            </a>
+            <a href="/gallery" class="links">
+                {% if page == "gallery" %}
+                <h3 class="active">Gallery</h3>
+                {% else %}
+                <h3>Gallery</h3>
+                {% endif%}
+            </a>
+            <a href="/request" class="links">
+                {% if page == "request" %}
+                <h3 class="active">Request</h3>
+                {% else %}
+                <h3>Request</h3>
+                {% endif%}
+            </a>
+            <a href="/calculator" class="links">
+                {% if page == "calculator" %}
+                <h3 class="active">Calculator</h3>
+                {% else %}
+                <h3>Calculator</h3>
+                {% endif%}
+            </a>
+            <!-- <h3>Login</h3> -->
+            <div>
+                <!-- Social Media Links -->
+                <!-- Shopping Cart -->
+            </div>
+        </right>
+    </header>
+
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+</body>
+</html>

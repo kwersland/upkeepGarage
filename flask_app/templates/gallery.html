@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upkeep Garage Storage Gallery</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/page2.png')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header id="header" class="d-flex justify-content-between align-items-center ">
+        <left id="left">
+            <a href="/">
+                <img id="logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="Upkeep Garage Storage KC">
+            </a>
+        </left>
+        <menu id="dropdown">
+            <div class="dropdown-content ">
+                <a href="/">
+                    {% if page == "home" %}
+                    <h3 class="active">Home</h3>
+                    {% else %}
+                    <h3>Home</h3>
+                    {% endif%}
+                </a>
+                <a href="/gallery">
+                    {% if page == "gallery" %}
+                    <h3 class="active">Gallery</h3>
+                    {% else %}
+                    <h3>Gallery</h3>
+                    {% endif%}
+                </a>
+                <a href="/request">
+                    {% if page == "request" %}
+                    <h3 class="active">Request</h3>
+                    {% else %}
+                    <h3>Request</h3>
+                    {% endif%}
+                </a>
+                <div class="d-flex">
+                    <!-- Social Media Links -->
+                    <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=61551834987966&mibextid=LQQJ4d">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/facebook.webp') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.instagram.com/upkeepgaragestoragekc/">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/instagram.png') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.linkedin.com/company/upkeep-garage-storage-kc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B2jotMiRpReql47WLlBH%2FuQ%3D%3D">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/linkedin.png') }}" >
+                    </a>
+                    <a class="text-decoration-none" href="https://www.tiktok.com/@upkeepgaragestoragekc?_t=8fqeiouZqsY&_r=1">
+                        <img class="social" src="{{ url_for('static', filename='img/social_media/tiktok.png') }}" >
+                    </a>
+                </div>
+            </div>
+            <img src="{{ url_for('static', filename='img/menu.png') }}" >
+        </menu>
+        <right id="navigation" class="d-flex justify-content-end align-items-center">
+
+            <!-- <h3>Shop</h3> -->
+            <a href="/" class="links">
+                {% if page == "home" %}
+                <h3 class="active">Home</h3>
+                {% else %}
+                <h3>Home</h3>
+                {% endif%}
+            </a>
+            <a href="/gallery" class="links">
+                {% if page == "gallery" %}
+                <h3 class="active">Gallery</h3>
+                {% else %}
+                <h3>Gallery</h3>
+                {% endif%}
+            </a>
+            <a href="/request" class="links">
+                {% if page == "request" %}
+                <h3 class="active">Request</h3>
+                {% else %}
+                <h3>Request</h3>
+                {% endif%}
+            </a>
+            <!-- <a href="/calculator" class="links">
+                {% if page == "calculator" %}
+                <h3 class="active">Calculator</h3>
+                {% else %}
+                <h3>Calculator</h3>
+                {% endif%}
+            </a> -->
+            <!-- <h3>Login</h3> -->
+            <div id="social_media" class="me-3">
+                <!-- Social Media Links -->
+                <a class="text-decoration-none" href="https://www.facebook.com/profile.php?id=61551834987966&mibextid=LQQJ4d">
+                    <img class="social" src="{{ url_for('static', filename='img/social_media/facebook.webp') }}" >
+                </a>
+                <a class="text-decoration-none" href="https://www.instagram.com/upkeepgaragestoragekc/">
+                    <img class="social" src="{{ url_for('static', filename='img/social_media/instagram.png') }}" >
+                </a>
+                <a class="text-decoration-none" href="https://www.linkedin.com/company/upkeep-garage-storage-kc/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B2jotMiRpReql47WLlBH%2FuQ%3D%3D">
+                    <img class="social" src="{{ url_for('static', filename='img/social_media/linkedin.png') }}" >
+                </a>
+                <a class="text-decoration-none" href="https://www.tiktok.com/@upkeepgaragestoragekc?_t=8fqeiouZqsY&_r=1">
+                    <img class="social" src="{{ url_for('static', filename='img/social_media/tiktok.png') }}" >
+                </a>
+            </div>
+        </right>
+    </header>
+    <main id="gallery">
+
+        <gallery class="container text-center">
+            <div class="row">
+                <column1 class="square col">
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_0213.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/corvette.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_1122.JPG') }}"/>
+                    <video class="image" src="{{ url_for('static', filename='img/gallery/close.MP4') }}" muted loop autoplay></video>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/tote2.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_8563.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/retractable&tote.JPG') }}"/>
+                    <video class="image" src="{{ url_for('static', filename='img/gallery/IMG_9808.mov') }}" muted loop autoplay></video>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_8384.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/305.jpeg') }}"/>
+                    
+                </column1>
+                <column2 class="square col" >
+                    <video class="image" src="{{ url_for('static', filename='img/gallery/IMG_8382.MP4') }}" muted loop autoplay></video>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/crownwall.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/fisheye.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/Tote.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/corvette2.JPG') }}"/>
+                    <video class="image" src="{{ url_for('static', filename='img/gallery/IMG_8885.MP4') }}" muted loop autoplay></video>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_8524.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_8525.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/double.jpeg') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/totes.jpeg') }}"/>
+                    
+                    
+                </column2>
+                <column3 class="square col" >
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/stockStationary.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/skis.PNG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/crownwall2.JPG') }}"/>
+                    <video class="image" src="{{ url_for('static', filename='img/gallery/IMG_8392.MP4') }}" muted loop autoplay></video>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_8883.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/crownwall3.JPG') }}"/>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_0219.JPG') }}"/>
+                    <video class="image" src="{{ url_for('static', filename='img/gallery/IMG_9738.MP4') }}" muted loop autoplay></video>
+                    <img class="image" src="{{ url_for('static', filename='img/gallery/IMG_0203.jpg') }}"/>
+                    
+                
+                </column3>
+
+            </div>
+        </gallery>
+    </main>
+
+        <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/43829551.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <script type="text/javascript" src="{{ url_for('static', filename='javascript/script.js') }}"></script>
+</body>
+</html>
