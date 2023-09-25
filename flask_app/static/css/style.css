@@ -1,0 +1,760 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (min-width: 769px) {
+    
+    /* Header */
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        padding-bottom: 1.5%;
+    }
+    
+    #logo {
+        height: 100px;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+    
+    #navigation {
+        width: 100%;
+        margin-top: 25px;
+    }
+    
+    .links {
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #dropdown {
+        display: none;
+    }
+    
+    #navigation a:hover {
+        color: grey;
+    }
+    
+    .active {
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+    
+    .social {
+        height: 30px;
+    }
+    
+    /* index */
+    fixed {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #main {
+        margin: auto;
+        width: 100%;
+    }
+    
+    #hook {
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+    
+    #bg-video {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        top: 120px;
+        left:0;
+        object-fit: cover;
+    }
+    
+    #main div{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%)
+    }
+    
+    .btn {
+        background-color: white;
+        font-size: x-large;
+    }
+    
+    #button {
+        text-align: center;
+        padding: 10px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    scroll {
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .img {
+        align-self: center;
+        margin-top: 4%;
+        padding: 1%;
+        height: 20%;
+        width: 30%;
+    }
+    
+    row2 {
+        margin-bottom: 4%;
+    }
+    
+    usa {
+        position: absolute;
+        top: 100%;
+    }
+    
+    #usa {
+        text-align: center;
+        padding: 10px;
+        color: gray;
+    }
+    
+    .bg-opaque {
+        background-color: black;
+        opacity: .7;
+        padding: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #owners {
+        margin: 25%;
+    }
+
+    .owners {
+        width: 50%;
+    }
+
+    #mission {
+        width: 50%;
+        margin: auto;
+    }
+
+    #mission-small {
+        display: none;
+    }
+
+    .display2 {
+        display: flex;
+    }
+
+    .display {
+        display: none;
+    }
+
+    #image {
+        width: 40%;
+        margin: 5%;
+    }
+
+    #bio {
+        width: 40%;
+        margin: 5%;
+    }
+    
+    .footer {
+        border-top: 10px gray double;    
+        opacity: .7;
+        padding: 5%;
+        margin-top: 5%;
+    }
+    
+    .form {
+        position: fixed;
+        top: 10%;
+    }
+    
+    
+    /* Request Page */
+    
+    #request {
+        position: fixed;
+        top: 50%;
+        left: 15%;
+        width: 100%;
+    }
+    
+    #form {
+        position: fixed;
+        top: 50%;
+        left: 80%;
+        transform: translate( -75%, -50%)
+    }
+    
+    /* hubspot meeting */
+    #meeting {
+        background-color: grey;
+        align-self: center;
+        position: absolute;
+        top: 90%;
+        width: 100%;
+        padding-bottom: 2%;
+    }
+    
+    #meeting2 {
+        width: 100%;
+    }
+    
+    meeting h1 {
+        margin-left: 15%;
+    }
+    
+    
+    /* Gallery Page */
+    #gallery {
+        max-width: 100%;
+        margin-top: 7.5%;
+        margin-left: 1%;
+        margin-right: 3%;
+    }
+    
+    .square {
+        width: 20%;
+    }
+    
+    .image {
+        width: 100%;
+        margin: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    /* Header */
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        padding-bottom: 1.5%;
+    }
+    
+    #logo {
+        height: 100px;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+    
+    #navigation {
+        display: none;
+    }
+    
+    .links {
+        display: none;
+    }
+
+    #dropdown {
+        margin-left: 45%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 0%;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #dropdown:hover .dropdown-content {display: flex; align-items: center; justify-content: space-evenly; width: 100%; padding: 6%;}
+    
+    #navigation a:hover {
+        color: grey;
+    }
+    
+    .active {
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+
+    #social_media {
+        display: none;
+    }
+
+    .social {
+        height: 30px;
+    }
+    
+    /* index */
+    fixed {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #main {
+        margin: auto;
+        width: 100%;
+    }
+    
+    #hook {
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+    
+    #bg-video {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        top: 120px;
+        left:0;
+        object-fit: cover;
+    }
+    
+    #main div{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%)
+    }
+    
+    .btn {
+        background-color: white;
+        font-size: x-large;
+    }
+    
+    #button {
+        text-align: center;
+        padding: 10px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    scroll {
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .img {
+        align-self: center;
+        margin-top: 4%;
+        padding: 1%;
+        height: 20%;
+        width: 30%;
+    }
+    
+    row2 {
+        margin-bottom: 4%;
+    }
+    
+    usa {
+        position: absolute;
+        top: 100%;
+    }
+    
+    #usa {
+        text-align: center;
+        padding: 10px;
+        color: gray;
+    }
+    
+    .bg-opaque {
+        background-color: black;
+        opacity: .7;
+        padding: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .about {
+        width: 30%;
+    }
+
+    #owners {
+        margin: 25%;
+    }
+
+    .owners {
+        width: 50%;
+    }
+
+    #mission { 
+        display: none;
+    }
+
+    #mission-small {
+        display: flex;
+        margin: auto;
+        width: 80%;
+    }
+
+    .display-cont {
+        display: contents;
+    }
+
+    .display2 {
+        display: none;
+    }
+
+    .display {
+        display: flex;
+    }
+
+    .image {
+        width: 50%;
+        margin: 5%;
+    }
+
+    .bio {
+        display: none;
+        width: 85%;
+        margin: 5%;
+    }
+    
+    .footer {
+        border-top: 10px gray double;    
+        opacity: .7;
+        padding: 5%;
+        margin-top: 5%;
+    }
+    
+    .form {
+        position: fixed;
+        top: 10%;
+    }
+    
+    
+    /* Request Page */
+    
+    .contact {
+        display: none;
+    }
+
+    #request {
+        position: fixed;
+        top: 50%;
+        left: 15%;
+        width: 100%;
+    }
+    
+    #form {
+        position: fixed;
+        top: 15%;
+        width: 75%;
+    }
+    
+    /* hubspot meeting */
+    #meeting {
+        background-color: grey;
+        align-self: center;
+        position: absolute;
+        top: 90%;
+        width: 100%;
+        padding-bottom: 2%;
+    }
+    
+    #meeting2 {
+        width: 100%;
+    }
+    
+    meeting h1 {
+        margin-left: 15%;
+    }
+    
+    
+    /* Gallery Page */
+    #gallery {
+        max-width: 100%;
+        margin-top: 7.5%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .square {
+        width: 20%;
+    }
+    
+    .image {
+        width: 100%;
+        margin: 3%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Header */
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        padding-bottom: 1.5%;
+    }
+    
+    #logo {
+        height: 100px;
+        margin-left: 40%;
+        margin-top: 5%;
+    }
+    
+    #navigation {
+        display: none;
+    }
+    
+    .links {
+        display: none;
+    }
+
+    #dropdown {
+        margin-left: 45%;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 0%;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        margin-right: 2%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    #dropdown:active .dropdown-content {display: flex; align-items: center; justify-content: space-evenly; width: 100%; padding: 6%;}
+    
+    #navigation a:hover {
+        color: grey;
+    }
+    
+    .active {
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+
+    #social_media {
+        display: none;
+    }
+
+    .social {
+        height: 15px;
+    }
+    
+    /* index */
+    fixed {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #main {
+        margin: auto;
+        width: 100%;
+    }
+    
+    #hook {
+        text-align: center;
+        padding: 10px;
+        color: white;
+    }
+    
+    #bg-video {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        top: 120px;
+        left:0;
+        object-fit: cover;
+    }
+    
+    #main div{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%)
+    }
+    
+    .btn {
+        background-color: white;
+        font-size: x-large;
+    }
+    
+    #button {
+        text-align: center;
+        padding: 10px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    scroll {
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .img {
+        align-self: center;
+        margin-top: 4%;
+        padding: 1%;
+        height: 20%;
+        width: 30%;
+    }
+    
+    row2 {
+        margin-bottom: 4%;
+    }
+    
+    usa {
+        position: absolute;
+        top: 100%;
+    }
+    
+    #usa {
+        text-align: center;
+        padding: 10px;
+        color: gray;
+    }
+    
+    .bg-opaque {
+        background-color: black;
+        opacity: .7;
+        padding: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    #owners {
+        margin: 25%;
+    }
+
+    .owners {
+        width: 50%;
+    }
+
+    #mission { 
+        display: none;
+    }
+
+    #mission-small {
+        display: flex;
+        margin: auto;
+        width: 80%;
+    }
+
+    .display-cont {
+        display: contents;
+    }
+
+    .display2 {
+        display: none;
+    }
+
+    .display {
+        display: flex;
+    }
+
+    .image {
+        width: 50%;
+        margin: 5%;
+    }
+
+    .bio {
+        display: none;
+        width: 85%;
+        margin: 5%;
+    }
+    
+    .footer {
+        border-top: 10px gray double;    
+        opacity: .7;
+        padding: 5%;
+        margin-top: 5%;
+    }
+    
+    .form {
+        position: fixed;
+        top: 10%;
+    }
+    
+    
+    /* Request Page */
+    
+    .contact {
+        display: none;
+    }
+
+    #request {
+        position: fixed;
+        top: 50%;
+        left: 15%;
+        width: 100%;
+    }
+    
+    #form {
+        position: fixed;
+        top: 15%;
+        width: 75%;
+    }
+    
+    /* hubspot meeting */
+    #meeting {
+        background-color: grey;
+        align-self: center;
+        position: absolute;
+        top: 90%;
+        width: 100%;
+        padding-bottom: 2%;
+    }
+    
+    #meeting2 {
+        width: 100%;
+    }
+    
+    meeting h1 {
+        margin-left: 15%;
+    }
+    
+    
+    /* Gallery Page */
+    #gallery {
+        max-width: 100%;
+        margin-top: 7.5%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .square {
+        width: 20%;
+    }
+    
+    .image {
+        width: 100%;
+        margin: 3%;
+    }
+}
