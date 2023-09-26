@@ -10,3 +10,4 @@ markupsafe==2.1.1 ; python_version >= '3.7'
 pycparser==2.21
 pymysql==1.0.2
 werkzeug==2.2.2 ; python_version >= '3.7'
+gunicorn==19.6.0
