@@ -709,7 +709,6 @@
         font-size: 1%;
     }
     
-    
     /* Request Page */
     
     .contact {
@@ -717,14 +716,17 @@
     }
 
     #request {
-        width: 100%;
+        position: static;
+        left: 5%;
     }
     
     #form {
-        margin-top: 5%;
+        position: inherit;
+        margin: 5%;
+        margin-top: 35%;
         left: 5%;
         width: 90%;
-        height: 50%;
+        height: 120%;
     }
     
     /* hubspot meeting */
