@@ -119,7 +119,7 @@
         </div>
 
         <!-- request form -->
-        <form id="form" class="p-3 col-5 form" action="/request/create" method="POST">
+        <div id="form" class="p-3 col-5 form">
             
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
             <script>
@@ -129,54 +129,7 @@
                     formId: "4c75b69b-0589-489d-9ce3-f0f09375e4c2"
                 });
             </script>
-            <!-- <label class="text-dark label1">Name</label>
-            <label class="label2">(required)</label>
-            <div class="d-flex grid gap-0 column-gap-3">
-
-                <div class="d-flex flex-column">
-                    <label class="pt-2 form-label text-dark label2" for="first_name">First Name</label>
-                    {% for message in get_flashed_messages(category_filter = ['first_name']) %}
-                    <p class="text-danger">*{{message}}</p>
-                    {% endfor %}
-                    <input id="name" class="form-control" type="text" name="first_name" id="first_name">
-                </div>
-
-
-                <div class="d-flex flex-column">
-                    <label class="pt-2 form-label text-dark label2" for="last_name">Last Name</label>
-                    {% for message in get_flashed_messages(category_filter = ['last_name']) %}
-                    <p class="text-danger">*{{message}}</p>
-                    {% endfor %}
-                    <input id="name" class="form-control" type="text" name="last_name" id="last_name">
-                </div>
-
-            </div>
-            
-            <label class="pt-2 text-dark form-label label1" for="email">Email</label>
-            <label class="label2">(required)</label>
-            {% for message in get_flashed_messages(category_filter = ['email']) %}
-            <p class="text-danger">*{{message}}</p>
-            {% endfor %}
-            <input class="form-control" type="email" name="email" id="email" placeholder="example@gmail.com">
-            
-            <label class="pt-2 text-dark form-label label1" for="phone">Phone</label>
-            <label class="label2">(required)</label>
-            {% for message in get_flashed_messages(category_filter = ['phone']) %}
-            <p class="text-danger">*{{message}}</p>
-            {% endfor %}
-            <input class="form-control" type="text" name="phone" id="phone" placeholder="(000)-000-0000">
-
-            <label class="pt-2 text-dark form-label label1" for="message">Message </label>
-            <label class="label2">(required)</label>
-            {% for message in get_flashed_messages(category_filter = ['message']) %}
-            <p class="text-danger">*{{message}}</p>
-            {% endfor %}
-            <textarea class="form-control" name="message" id="message" cols="30" rows="5" placeholder="What type of remodel? How many racks?"></textarea>
-
-            <a id="clear" href="/request">Clear</a>
-            <button id="submit" type="submit">Submit</button> -->
-
-        </form>
+        </div>
     </main>
     <meeting id="meeting">
         <h1 class="mt-2 text-light">Do you know what you want?</h1>
@@ -186,33 +139,6 @@
         <!-- End of Meetings Embed Script -->
     </meeting>
 
-
-    <!-- <estimate id="estimate">
-
-        <h1 class="uppercase mb-5">Estimate Calculator</h1>
-        <form id="estimateForm" action="">
-            <div class="form-check form-switch d-flex justify-content-evenly align-items-center">
-                <label class="form-check-label fs-3" for="flexSwitchCheckDefault">Do you want Storage?</label>
-                <input id="submit" type="checkbox" onclick="storageCheckbox()">Yes</input>
-            </div>
-            <h4 id="storageType" class="none">Wall or ceiling?</h4>
-            <select  id="storage" class="form-select" multiple aria-label="Multiple select example">
-                <option value="stationary">
-                    <img class="image" src="{{ url_for('static', filename='img/gallery/stockStationary.JPG') }}"/>
-                </option>
-                <option value="tote">
-                    
-                </option>
-                <option value="retractable">
-                    
-                </option>
-            </select>
-            <h4>How many square feet?</h4>
-            <h4>Do you want it painted?</h4>
-            <h4>How many square feet?</h4>
-
-        </form>
-    </estimate> -->
 
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/43829551.js"></script>
