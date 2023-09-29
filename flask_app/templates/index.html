@@ -243,13 +243,9 @@
                     </div>
             </about>
             <about2 class="display flex-column align-items-center">
-                <p id="instruction" class="fw-light">*click on the images to learn more about the owners</p>
                 <div class="d-flex justify-content-evenly align-items-center">
-                    <a id="image1" class="display-cont" onclick="display('image1','bio1')">
-                        <img class="image" src="{{ url_for('static', filename='img/calvin.JPG') }}"/>
-                    </a>
-                    <div onclick="hide('image1','bio1')" id="bio1" class="bio">
-                        <h4 class="fw-bold">The Fletcher's</h4>
+                    <div id="bio">
+                        <h3 class="fw-bold">The Fletcher's</h3>
                         <br>
                         <p>
                             As one of the proud owners, Calvin is married to a wonderful spouse, and
@@ -259,11 +255,12 @@
                             experience and customer experience enables him to create a happy 
                             space where families can thrive and enjoy a fulfilling life.
                         </p>
+                        <img id="image" class="about" src="{{ url_for('static', filename='img/calvin.JPG') }}"/>
                     </div>
                 </div>
                 <div class="d-flex justify-content-evenly align-items-center">
-                    <div onclick="hide('image2','bio2')" id="bio2" class="text-end bio">
-                        <h4 class="fw-bold">The Cook's</h4>
+                    <div id="bio">
+                        <h3 class="fw-bold">The Cook's</h3>
                         <br>
                         <p>
                             Levi and his wife Skylar have a beautiful daughter, Hazel,
@@ -274,34 +271,30 @@
                             are committed to raising their family and serving others 
                             with what they do.
                         </p>
+                        <img id="image" class="about" src="{{ url_for('static', filename='img/levi.JPG') }}"/>
                     </div>
-                    <a id="image2" class="text-decoration-none display-cont" onclick="display('image2','bio2')">
-                        <img class="image" src="{{ url_for('static', filename='img/levi.JPG') }}"/>
-                    </a>
                 </div>
                 <div class="d-flex justify-content-evenly align-items-center">
-                    <a id="image3" class="text-decoration-none display-cont" onclick="display('image3','bio3')">
-                        <img class="image" src="{{ url_for('static', filename='img/karsten.JPG') }}"/>
-                    </a>                        
-                    <div onclick="hide('image3','bio3')" id="bio3" class="bio">
-                        <h4 class="fw-bold">The Wersland's</h4>
+                    <div id="bio">
+                        <h3 class="fw-bold">The Wersland's</h3>
                         <br>
                         <p>
                             Karsten and his wife, Samantha, have a beautiful baby girl named Evelyn.
-                            Karsten grew up in Utah and he and his little family moved to kansas to 
+                            Karsten grew up in Utah and he and his little family moved to Kansas to 
                             start a new adventure. Karsten grew up doing house work, and always had a
                             knack for handywork. He has spent most of this year remodeling their own
                             house and working for a remodel/renovation company. His years of customer
                             relations experience have him excited to bring organization and peace to
                             individuals and families in Kansas City.
                         </p>
+                        <img id="image" class="about" src="{{ url_for('static', filename='img/karsten.JPG') }}"/>
                     </div>
                 </div>
             </about2>
             <footer class="footer d-flex">
                 <div>
-                    <h5 id="footerText" style="color:black;">Website created by Karsten Wersland</h5>
-                    <h5 id="footerText" style="color:black;">Upkeep Garage Storage KC, LLC</h5>
+                    <h5 style="color:black;">Website created by Karsten Wersland</h5>
+                    <h5 style="color:black;">Upkeep Garage Storage KC, LLC</h5>
                     <a style="text-decoration:none; color:black;" href="mailto:admin@upkeepgaragekc.com" ><h5 class="footerText">admin@upkeepgaragekc.com</h5></a>
                 </div>
                 <div class="p-5">
