@@ -706,7 +706,7 @@
     }
 
     .footerText {
-        font-size: 1%;
+        display: none;
     }
     
     /* Request Page */
