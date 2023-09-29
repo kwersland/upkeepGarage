@@ -68,6 +68,13 @@
         text-align: center;
         padding: 10px;
         color: white;
+        text-decoration: none;
+    }
+
+    #phone {
+        text-align: center;
+        padding: 10px;
+        color: white;
     }
     
     #bg-video {
@@ -319,6 +326,13 @@
         text-align: center;
         padding: 10px;
         color: white;
+        text-decoration: none;
+    }
+
+    #phone {
+        text-align: center;
+        padding: 10px;
+        color: white;
     }
     
     #bg-video {
@@ -392,11 +406,11 @@
     }
 
     #owners {
-        margin: 25%;
+        margin: 15%;
     }
 
     .owners {
-        width: 50%;
+        width: 70%;
     }
 
     #mission { 
@@ -424,6 +438,10 @@
     .image {
         width: 50%;
         margin: 5%;
+    }
+
+    #instruction {
+        font-size: larger;
     }
 
     .bio {
@@ -509,13 +527,13 @@
         left: 0;
         background-color: white;
         width: 100%;
-        padding-bottom: 1.5%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
     }
     
     #logo {
-        height: 100px;
-        margin-left: 40%;
-        margin-top: 5%;
+        height: 75px;
     }
     
     #navigation {
@@ -528,27 +546,7 @@
 
     #dropdown {
         margin-left: 45%;
-    }
-
-    .dropdown-content {
         display: none;
-        position: absolute;
-        left: 0%;
-        background-color: white;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-    .dropdown-content a {
-        margin-right: 2%;
-        text-decoration: none;
-        color: black;
-    }
-    
-    #dropdown:active .dropdown-content {display: flex; align-items: center; justify-content: space-evenly; width: 100%; padding: 6%;}
-    
-    #navigation a:hover {
-        color: grey;
     }
     
     .active {
@@ -561,7 +559,7 @@
     }
 
     .social {
-        height: 15px;
+        height: 35px;
     }
     
     /* index */
@@ -581,27 +579,29 @@
         text-align: center;
         padding: 10px;
         color: white;
+        font-size: x-large;
+        text-decoration: none;
     }
     
     #bg-video {
         position: absolute;
         width: 100%;
         height: 90%;
-        top: 120px;
+        top: 90px;
         left:0;
         object-fit: cover;
     }
     
     #main div{
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -40%)
+        transform: translate(-50%, -50%)
     }
     
     .btn {
         background-color: white;
-        font-size: x-large;
+        font-size: large;
     }
     
     #button {
@@ -613,7 +613,7 @@
     
     scroll {
         position: absolute;
-        top: 80%;
+        top: 90%;
         width: 100%;
         background-color: white;
     }
@@ -640,21 +640,25 @@
         padding: 10px;
         color: gray;
     }
+
+    .L {
+        font-size: x-large;
+    }
+
+    .M {
+        font-size: large;
+    }
     
-    .bg-opaque {
-        background-color: black;
-        opacity: .7;
-        padding: 5%;
-        margin-top: 5%;
-        margin-bottom: 5%;
+    #learn {
+        display: none;
     }
 
     #owners {
-        margin: 25%;
+        margin: 20%;
     }
 
     .owners {
-        width: 50%;
+        width: 60%;
     }
 
     #mission { 
@@ -664,7 +668,7 @@
     #mission-small {
         display: flex;
         margin: auto;
-        width: 80%;
+        width: 100%;
     }
 
     .display-cont {
@@ -696,6 +700,10 @@
         padding: 5%;
         margin-top: 5%;
     }
+
+    .footerText {
+        font-size: 1%;
+    }
     
     .form {
         position: fixed;
@@ -719,7 +727,8 @@
     #form {
         position: fixed;
         top: 15%;
-        width: 75%;
+        left: 5%;
+        width: 90%;
     }
     
     /* hubspot meeting */
@@ -727,7 +736,7 @@
         background-color: grey;
         align-self: center;
         position: absolute;
-        top: 90%;
+        top: 95%;
         width: 100%;
         padding-bottom: 2%;
     }
@@ -737,7 +746,7 @@
     }
     
     meeting h1 {
-        margin-left: 15%;
+        margin-left: 10%;
     }
     
     
