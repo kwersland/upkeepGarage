@@ -671,8 +671,9 @@
         width: 100%;
     }
 
-    #instruction {
-        font-size: small;
+    .about {
+        width: 90%;
+        margin: 5%;
     }
 
     .display-cont {
@@ -688,13 +689,12 @@
     }
 
     .image {
-        width: 50%;
+        width: 90%;
         margin: 5%;
     }
 
-    .bio {
-        display: none;
-        width: 85%;
+    #bio {
+        width: 90%;
         margin: 5%;
     }
     
@@ -703,10 +703,6 @@
         opacity: .7;
         padding: 5%;
         margin-top: 5%;
-    }
-
-    #footerText {
-        display: none;
     }
     
     /* Request Page */
