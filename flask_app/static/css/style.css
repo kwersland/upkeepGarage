@@ -704,6 +704,10 @@
         padding: 5%;
         margin-top: 5%;
     }
+
+    .footerText {
+        display: none;
+    }
     
     /* Request Page */
     
